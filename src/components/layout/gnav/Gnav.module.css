@@ -1,0 +1,22 @@
+.link {
+  /* 共通のリンクスタイル */
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 50%;
+    height: 1px;
+    background-color: currentColor;
+    transform: translateX(-50%) scaleX(0);
+    will-change: transform;
+    transition: transform 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  &:hover::after,
+  &.linkActive::after {
+    transform: translateX(-50%) scaleX(1);
+  }
+}

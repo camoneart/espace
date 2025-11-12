@@ -1,0 +1,7 @@
+.actions {
+  height: 100%;
+  display: block flex;
+  align-items: center;
+  flex: 1 0 0;
+  justify-content: flex-end;
+}
