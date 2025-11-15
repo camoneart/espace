@@ -49,3 +49,6 @@ next-env.d.ts
 
 # implementation logs (local work history)
 /_docs
+
+# scripts directory (data fetching and processing scripts)
+/scripts
